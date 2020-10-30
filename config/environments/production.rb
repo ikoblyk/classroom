@@ -59,7 +59,7 @@ Rails.application.configure do
   config.log_tags = [:request_id]
 
   # Use a different cache store in production.
-  memcachedcloud_servers = ENV["MEMCACHEDCLOUD_SERVERS"].split(",")
+  memcachedcloud_servers = ENV["MEMCACHEDCLOUD_SERVERS"]
 
   dalli_store_name_and_password = {
     username: ENV["MEMCACHEDCLOUD_USERNAME"],
